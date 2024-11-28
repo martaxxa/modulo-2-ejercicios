@@ -16,26 +16,16 @@
     font-style: normal;
 }
 
-.style {
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    gap: 10px;
-}
-
-.button {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    background-color:darkturquoise;
-    color: white;
+.empezar {
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
-    cursor: pointer;
-}
-
-.button:hover {
+    font-size: 18px;
+    margin: 15px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 5px;
+    border: none;
     background-color: darkcyan;
+    color: white;
 }
