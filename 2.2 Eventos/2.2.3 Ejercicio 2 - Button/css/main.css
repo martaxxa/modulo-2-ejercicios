@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 10px;
+    background-color: darkcyan;
+    color: white;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.style {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    gap: 10px;
+}
+
+.button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color:darkturquoise;
+    color: white;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
