@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 10px;
+    background-color: darkcyan;
+    color: white;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.form {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.input-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-inline: 15px;
+    padding-block: 8px;
+    background-color: darkturquoise;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: darkcyan;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 20px;
+}
