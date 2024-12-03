@@ -10,7 +10,7 @@ btn.addEventListener('click' , (ev) => {
     const usuaria = nombre.value;
 
     if( usuaria === 'Maria' || usuaria === 'Luisa' ) {
-        message.innerHTML = `Bienvenida, ${usuaria}!`;
+        message.innerHTML = `¡Bienvenida, ${usuaria}!`;
     }
 
     else {
