@@ -38,10 +38,19 @@
     background-color: white;
     padding-block: 10px;
     padding-inline: 30px;
+    gap: 5px;
+}
+
+.btn-add {
+    background-color: darkturquoise;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    color: white;
 }
 
 .second-block {
-    display: inline-flex;
+    display: flex;
     background-color: white;
     padding-block: 10px;
     padding-left: 20px;
@@ -49,3 +58,20 @@
     gap: 10px;
 }
 
+.list_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-search {
+    background-color: darkturquoise;
+    padding-block: 3px;
+    padding-inline: 7px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.task-ul {
+    list-style-type: none;
+}
