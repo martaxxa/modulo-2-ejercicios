@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 20px;
+    background-color: darkcyan;
+    color: white;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    background-color: lightgray;
+}
+
+.first-block {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    padding-block: 10px;
+    padding-inline: 20px;
+}
