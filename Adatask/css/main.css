@@ -23,10 +23,29 @@
     background-color: lightgray;
 }
 
+.main-blocks {
+    display: inline-flex;
+    gap: 20px;
+    align-items: baseline;
+    width:max-content;
+    margin-block: 20px;
+    margin-inline: 15%;
+}
+
 .first-block {
     display: inline-flex;
     flex-direction: column;
     background-color: white;
     padding-block: 10px;
-    padding-inline: 20px;
+    padding-inline: 30px;
 }
+
+.second-block {
+    display: inline-flex;
+    background-color: white;
+    padding-block: 10px;
+    padding-left: 20px;
+    padding-right: 100px;
+    gap: 10px;
+}
+
