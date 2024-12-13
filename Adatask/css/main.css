@@ -24,58 +24,66 @@
 }
 
 .main-blocks {
-    display: inline-flex;
+    display: flex;
     gap: 20px;
-    align-items: baseline;
-    width:max-content;
-    margin-block: 20px;
-    margin-inline: 15%;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .first-block {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     background-color: white;
-    padding-block: 10px;
+    padding-bottom: 100px;
+    padding-top: 10px;
     padding-inline: 30px;
     gap: 5px;
-}
-
-.btn-add {
-    background-color: darkturquoise;
-    padding: 3px;
     border-radius: 5px;
-    border: none;
-    color: white;
+    border: 1px solid rgba(134, 132, 132, 0.1);
 }
 
 .second-block {
     display: flex;
     background-color: white;
-    padding-block: 10px;
-    padding-left: 20px;
-    padding-right: 100px;
-    gap: 10px;
-}
-
-.btn-search {
-    background-color: darkturquoise;
-    padding-block: 3px;
-    padding-inline: 7px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-}
-
-.task-ul {
-    list-style-type: none;
+    padding: 10px 100px 10px 10px;
+    gap: 10px
 }
 
 .list_container {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     background-color: white;
+    gap: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(134, 132, 132, 0.1);
   }
+
+.btn-add, .btn-search {
+    background-color: darkturquoise;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.input-search, .input-add {
+    width: 200px;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: lightgray;
+    padding: 5px;
+}
+
+  .task-ul {
+    list-style-type: none;
+    padding: 10px 10px 30px 10px;
+}
   
   li:has(input:checked) {
     text-decoration: line-through;
