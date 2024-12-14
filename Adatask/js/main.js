@@ -19,16 +19,16 @@ const tasks = [
 for (const addObj of tasks) {
     
   if(addObj.completed === true){  
-      listTask.innerHTML += `<li><input class="checkbox"  type="checkbox" id="checkBox" checked>` + ' ' + `${addObj.name}</li>`;
+      listTask.innerHTML += `<li><input class="checkbox" type="checkbox" id="checkBox" checked>` + ' ' + `${addObj.name}</li>`;
   }
   else{
-      listTask.innerHTML += `<li><input class="checkbox"  type="checkbox" id="checkBox">` + ' ' + `${addObj.name}</li>`;
+      listTask.innerHTML += `<li><input class="checkbox" type="checkbox" id="checkBox">` + ' ' + `${addObj.name}</li>`;
   }
 };
 
 btnAdd.addEventListener('click' , (ev) => {
   ev.preventDefault();
-  listTask.innerHTML += `<li><input class="checkbox"  type="checkbox" id="checkBox">` + ' ' + `${add.value}</li>`;
+  listTask.innerHTML += `<li><input class="checkbox" type="checkbox" id="checkBox">` + ' ' + `${add.value}</li>`;
   add.value = " ";
 });
 
