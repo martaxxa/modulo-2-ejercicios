@@ -4,6 +4,8 @@ const add = document.querySelector('.js_add');
 const btnAdd = document.querySelector('.btn-add');
 const listTask = document.querySelector('.task-ul');
 const check = document.querySelector ('.checkbox');
+const inputSearch = document.querySelector('.input-search');
+const btnSearch = document.querySelector('.js_search');
 
 const tasks = [
   { name: "Recoger setas en el campo", completed: true, id: 1 },
@@ -16,33 +18,34 @@ const tasks = [
   },
 ];
 
-for (const addObj of tasks) {
-    
-  if(addObj.completed === true){  
-      listTask.innerHTML += `<li><input class="checkbox" type="checkbox" id="checkBox" checked>` + ' ' + `${addObj.name}</li>`;
+const renderAllTasks = (tasksToRender) => {
+  listTask.innerHTML = ''; 
+  for (const task of tasksToRender) {
+    const checked = task.completed ? 'checked' : '';
+    listTask.innerHTML += `
+      <li>
+        <input class="checkbox" type="checkbox" ${checked}>
+        ${task.name}
+      </li>`;
   }
-  else{
-      listTask.innerHTML += `<li><input class="checkbox" type="checkbox" id="checkBox">` + ' ' + `${addObj.name}</li>`;
-  }
-};
+}; 
+
+renderAllTasks(tasks);
 
 btnAdd.addEventListener('click' , (ev) => {
   ev.preventDefault();
-  listTask.innerHTML += `<li><input class="checkbox" type="checkbox" id="checkBox">` + ' ' + `${add.value}</li>`;
-  add.value = " ";
+  if (add.value.trim() !== '') {
+    tasks.push({ name: add.value.trim(), completed: false, id: tasks.length + 1 });
+    renderAllTasks(tasks);
+    add.value = ''; 
+  }
 });
 
+const handleInputSearch = () => { 
 
+  const filterText = inputSearch.value.toLowerCase();
+  const filteredTasks = tasks.filter(taskObj => taskObj.name.toLowerCase().includes(filterText));
+  renderAllTasks(filteredTasks);
+};
 
-
-
-
-/*btnAdd.addEventListener ('click' , (ev) => {
-  ev.preventDefault();
-  listTask.innerHTML += `<li><input class="checkbox" type="checkbox" id="checkBox">` + ' ' + `${add.value}</li>`;
-  add.value = " ";
-});
-
-check.addEventListener ('click' , (ev) => {
-  
-});*/
+btnSearch.addEventListener('click', handleInputSearch);
